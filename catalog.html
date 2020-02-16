@@ -22,35 +22,42 @@
   	</header>
   	<main>
   		<section>
-  			<div>
-  				<h3>Инфраструктура:</h3>
-  				<ul>
-  					<li>
-  						<input type="checkbox" id="bass" name="infra" value="Бассейн" checked><label for="bass">Бассейн</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" id="park" name="infra" value="Парковка"><label for="park">Парковка</label>
-  					</li>
-  					<li>
-  						<input type="checkbox" id="wi" name="infra" value="Wi-Fi"><label for="wi">Wi-Fi</label>
-  					</li>
-  				</ul>
-  			</div>
-  			<div>
-  				<h3>Тип жилья:</h3>
-  				<ul>
-  					<li>
-  						<p><input type="checkbox" name="hotel" value="Гостиница" checked>Гостиница</p>
-  					</li>
-  					<li>
-  						<p><input type="checkbox" name="hotel" value="Мотель" checked>Мотель</p>
-  					</li>
-  					<li>
-  						<p><input type="checkbox" name="hotel" value="Апартаменты" checked>Апартаменты</p>
-  					</li>
-  				</ul>
-  			</div>
-  			<div>
+        <form>
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+            <li>
+              <input type="checkbox" id="form-bass" name="bass" checked>
+              <label for="bass">Бассейн</label>
+            </li>
+            <li>
+              <input type="checkbox" id="form-park" name="park">
+              <label for="park">Парковка</label>
+            </li>
+            <li>
+              <input type="checkbox" id="form-wi" name="wi">
+              <label for="form-wi">Wi-Fi</label>
+            </li>
+          </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="form-hotel" checked>
+                <label for="form-hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="form-motel" checked>
+                <label for="form-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="form-apartment" checked>
+                <label for="form-apartment">Апартаменты</label>
+              </li>
+          </ul>
+        </fieldset>
+  			<p>
   				<h3>Стоимость в сутки (р):</h3>
   				<p>От 0</p>
   				<p>До 3000</p>
@@ -58,7 +65,8 @@
           <img src="img/filter-button.svg" alt="Бегунок" width="15" height="15">
           <img src="img/filter-button.svg" alt="Бегунок" width="15" height="15">
   				<button type="button">Показать</button>
-  			</div>
+  			</p>
+      </form>
   			<div>
   				<h3 class="visually-hidden">Результаты</h3>
   				<p>Найдено: 3</p>
