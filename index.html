@@ -20,18 +20,18 @@
           <a href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <img src="img/logo-little.jpg" alt="Логотип сити" width="140" height="75">
+      <img src="img/logo-little.svg" alt="Логотип сити" width="140" height="75">
     </header>
     <main>
       <section>
         <img src="img/logo-main.png" alt="Логотип Седона" width="460" height="350">
-        <img src="img/polygon.svg" alt="Неровный край" width="1200" height="9ы0">
+        <img src="img/polygon.svg" alt="Неровный край" width="1200" height="90">
         <p>Седона - небольшой городок в Аризоне,<br>
            заслуживающий большего</p>    
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section>
-        <h2>Преимущества Седоны</h2>
+        <h2 class="visually-hidden">Преимущества Седоны</h2>
         <div>
           <h3>Настоящий городок</h3>
           <p>№1</p>
@@ -69,8 +69,7 @@
         <div>
           <ul>
             <li>
-              <h3>Небольшая площпдь</h3>
-              <p>№3</p>
+              <h3>Небольшая площадь</h3>
               <p>Все достопримечательности<br>
                  находятся очень близко</p>
             </li>
@@ -96,7 +95,25 @@
       </section>
       <section>
         <h2>Поиск гостиницы в Седоне</h2>
-        <!--Здесь будет форма-->
+        <form action="#" method="post">
+          <p>
+            <label for="form-visit-date">Дата заезда:</label>
+            <input type="text" name="visit-date" value="24 апреля 2017" id="form-visit-date">
+          </p>
+          <p>
+            <label for="form-departure-date">Дата выезда:</label>
+            <input type="text" name="departure-date" value="4 июля 2017" id="form-departure-date">
+          </p>
+          <p>
+            <label for="form-value-adult">Взрослые:</label>
+            <input type="text" name="value-adult" value="2" id="form-value-adult">
+          </p>
+          <p>
+            <label for="form-value-adult">Дети:</label>
+            <input type="text" name="value-child" value="0" id="form-value-child">
+          </p>
+          <button type="submit">Найти</button>
+        </form>
       </section>
       <div>
       	<img src="img/map.jpg" alt="Карта" width="1200" height="475">
