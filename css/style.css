@@ -1,0 +1,142 @@
+body {
+	margin: 0 40px;
+	padding: 0;
+
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	color: #333333;
+	text-transform: uppercase;
+
+	background-color: #ffffff;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.button {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+    text-transform: uppercase;
+}
+
+
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:focus {
+	color: #b7b7b7;
+}
+
+.main-logo {
+	background-color: #5785ae;
+	background-image: url("img/background-main.jpg");
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 100%;
+
+	
+}
+
+.logo-group {
+	text-align: center;
+	padding-top: 80px;
+	
+
+}
+
+.logo-part {
+	width: 100%;
+	
+
+}
+
+.logo-info {
+	background-color: #ffffff;
+	font-size: 21px;
+	text-align: center;
+}
+
+.info-narrow {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.sedona-blue {
+	background-color: #81b3d2;
+	display: flex;
+}
+
+.text-sedona {
+	color: #ffffff;
+	text-align: center;
+}
+
+.text-first h3 {
+	font-size: 21px;
+}
+
+.opportunities-list {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.opportunities-item {
+	text-align: center;
+}
+
+.sedona-interesting {
+	text-align: center;
+}
+
+.grey {
+	background-color: #eeeeee;
+}
+
+.sedona-interesting h2 {
+	font-size: 30px;
+	line-height: 36px;
+}
+
+.find-form {
+	text-align: center;
+	background-color: #ffffff;
+	width: 570px;
+	margin: 0 auto;
+	
+}
+
+.find-form h2 {
+	background-color: #766357;
+	color: #ffffff;
+}
