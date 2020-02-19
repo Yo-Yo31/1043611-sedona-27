@@ -38,10 +38,31 @@ a {
 }
 
 
-}
-
 .site-navigation {
 	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.navigation-item:nth-child(2)::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/logo-little.svg")
+	width: 140px;
+	height: 75px;
+	
+	
+}
+
+
+
+.site-navigation p {
+	color: #9b8d84;
 }
 
 .site-navigation a {
@@ -56,14 +77,18 @@ a {
 	color: #b7b7b7;
 }
 
+.navigation-item {
+	justify-content: space-around;
+}
+
 .main-logo {
 	background-color: #5785ae;
-	background-image: url("img/background-main.jpg");
+	background-image: url("../img/background-main.jpg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	width: 100%;
+	background-size: 100%;
 
-	
 }
 
 .logo-group {
@@ -75,7 +100,7 @@ a {
 
 .logo-part {
 	width: 100%;
-	
+	vertical-align: bottom;
 
 }
 
@@ -85,19 +110,33 @@ a {
 	text-align: center;
 }
 
+
+
 .info-narrow {
 	font-size: 14px;
 	font-weight: 400;
+
+}
+
+.sedona-img {
+	margin: 0;
 }
 
 .sedona-blue {
 	background-color: #81b3d2;
 	display: flex;
+	justify-content: space-between;
 }
 
 .text-sedona {
 	color: #ffffff;
 	text-align: center;
+	
+
+}
+
+.sedona-img {
+	vertical-align: bottom;
 }
 
 .text-first h3 {
@@ -109,10 +148,48 @@ a {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin: 0;
 }
 
 .opportunities-item {
 	text-align: center;
+	padding-top: 140px;
+	padding-bottom: 90px;
+}
+
+.opportunities-item:first-child::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-1.png"); 
+	background-repeat: no-repeat;
+}
+
+.opportunities-item:nth-child(2)::before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 625px;
+	
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-2.png"); 
+	background-repeat: no-repeat;
+	
+}
+
+.opportunities-item:last-child::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-3.png"); 
+	background-repeat: no-repeat;
+	
+;
+
+	
 }
 
 .sedona-interesting {
@@ -129,14 +206,127 @@ a {
 }
 
 .find-form {
-	text-align: center;
+	
 	background-color: #ffffff;
 	width: 570px;
 	margin: 0 auto;
+	background-color: #ffffff;
+	background-image: url("../img/"map.jpg);
+	background-repeat: no-repeat;
+	
+
 	
 }
 
 .find-form h2 {
 	background-color: #766357;
 	color: #ffffff;
+	font-size: 21px;
+	line-height: 26px;
+	padding: 30px 138px;
+	text-align: center;
+	
+}
+
+.find-form h2:hover {
+	background-color: #604e43;
+
+}
+
+.find-form h2:focus {
+	background-color: #503e33;
+	color: #857871;
+}
+
+.form-flex {
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.form-text {
+	font-family: inherit;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: inherit;
+	background-color: #f2f2f2;
+	border: none;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	padding-left: 15px;
+	text-align: left;
+	}
+
+.form-block {
+	display: flex;
+}
+
+.form-text:hover {
+	background-color: #ebebeb;
+}
+
+.form-text:focus {
+	background-color: #ffffff;
+}
+
+.find-button {
+	background-color: #81b3d2;
+	font-size: 21px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 20px 196px;
+	border: none;
+	color: #ffffff;
+
+}
+
+.find-button:hover {
+	background-color: #669ec0;
+}
+
+.find-button:focus {
+	background-color: #5496bd;
+	color: #7aadcb;
+}
+
+.footer-main {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-tel {
+	list-style: none;
+}
+
+.footer-social {
+	list-style: none;
+}
+
+.contacts {
+	display: flex;
+	font-size: 21px;
+}
+
+.social-element {
+	display: flex;
+	background-color: #81b3d2;
+	margin-right: 7px;
+	
+	width: 45px;
+	height: 45px;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-social {
+	display: flex;
+}
+
+.social-element:hover {
+	background-color: #669ec0;
+}
+
+.social-element:focus {
+	background-color: #5496bd;
+
 }
