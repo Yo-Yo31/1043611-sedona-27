@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Поиск жилья: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  	<header>
-  		<ul>
+    <header class="main-header">
+      <ul class="site-navigation">
         <li>
           <a href="info.html">Информация</a>
         </li>
@@ -16,10 +19,12 @@
         <li>
           <a href="map.html">Карта штата</a>
         </li>
-        <li>Гостиницы</li>
+        <li>
+          <p>Гостиницы<p>
+        </li>
       </ul>
       <img src="img/logo-little.svg" alt="Логотип сити" width="140" height="75">
-  	</header>
+    </header>
   	<main>
   		<section>
         <form>
@@ -127,30 +132,28 @@
   			</ul>
   		</section>
   	</main>
-  	<footer>
+  	 <footer class="footer-main">
       <div class="contacts">
-        <ul>
-          <li>
-            <a href="#">#visitsedona</a>
-          </li>
+        <ul class=footer-tel>
+          <li>#visitsedona</li>
           <li>тел: +7(495) 666-02-66</li>
         </ul>
       </div>
       <div class="social">
-        <ul>
-          <li>
+        <ul class="footer-social">
+          <li class="social-element">
             <a href="#">
-              <img src="img/t-icon.svg" width="45" height="45">
+              <img src="img/t-icon.svg" width="20" height="20">
             </a>
           </li>
-          <li>
+          <li class="social-element">
             <a href="#">
-              <img src="img/fb-icon.svg" width="45" height="45">
+              <img src="img/fb-icon.svg" width="20" height="20">
             </a>
           </li>
-          <li>
+          <li class="social-element">
             <a href="#">
-              <img src="img/youtube-icon.svg" width="45" height="45">
+              <img src="img/youtube-icon.svg" width="20" height="20">
             </a>
           </li>
         </ul>
@@ -163,4 +166,4 @@
       </div>
     </footer>
   </body>
- </html>
+</html>
