@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">
       <ul class="site-navigation">
-        <li>
+        <li class="navigation-item">
           <a href="info.html">Информация</a>
         </li>
         <li>
@@ -23,16 +23,16 @@
           <a href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      <img src="img/logo-little.svg" alt="Логотип сити" width="140" height="75">
+      
     </header>
     <main class="container">
       <section class="main-logo">
         <div class="logo-group">
           <img src="img/logo-main.png" alt="Логотип Седона" width="460" height="350">
-          <img class="logo-part" src="img/polygon.svg" alt="Неровный край" width="1200" height="90px">
+          <img class="logo-part" src="img/polygon.svg" alt="Неровный край" width="1200" height="60px">
         </div>
         <div class="logo-info">
-          <p>Седона - небольшой городок в Аризоне,<br>
+          <p class="info-width">Седона - небольшой городок в Аризоне,<br>
              заслуживающий большего</p>    
           <p class="info-narrow">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
@@ -46,7 +46,7 @@
               <p class="info-narrow">Седона - не аттракцион для туристов,<br>
                  там течет своя жизнь</p>
           </div>
-              <p>
+              <p class="sedona-img">
                 <img src="img/photo-1.jpg" alt="Вид Седоны" width="800" height="258">
               </p>
         </div>
@@ -71,7 +71,7 @@
           </ul>
         </div>
         <div class="sedona-blue">
-          <p>
+          <p class="sedona-img">
             <img src="img/photo-2.jpg" alt="Мост дьявола" width="800" height="258">
           </p>
           <div class="text-sedona">
@@ -112,53 +112,50 @@
       <section class="find-form">
         <h2>Поиск гостиницы в Седоне</h2>
         <form action="#" method="post">
-          <p>
+          <p class="form-name">
             <label for="form-visit-date">Дата заезда:</label>
-            <input type="text" name="visit-date" value="24 апреля 2017" id="form-visit-date">
+            <input class="form-text" type="text" name="visit-date" value="24 апреля 2017" id="form-visit-date">
           </p>
           <p>
             <label for="form-departure-date">Дата выезда:</label>
-            <input type="text" name="departure-date" value="4 июля 2017" id="form-departure-date">
+            <input class="form-text" type="text" name="departure-date" value="4 июля 2017" id="form-departure-date">
           </p>
-          <p>
-            <label for="form-value-adult">Взрослые:</label>
-            <input type="text" name="value-adult" value="2" id="form-value-adult">
-          </p>
-          <p>
-            <label for="form-value-adult">Дети:</label>
-            <input type="text" name="value-child" value="0" id="form-value-child">
-          </p>
-          <button type="submit">Найти</button>
+          <div class="form-flex">
+            <p>
+              <label for="form-value-adult">Взрослые:</label>
+              <input class="form-text" type="text" name="value-adult" value="2" id="form-value-adult">
+            </p>
+            <p>
+              <label for="form-value-adult">Дети:</label>
+              <input class="form-text" type="text" name="value-child" value="0" id="form-value-child">
+            </p>
+          </div>
+          <button class="find-button" type="submit">Найти</button>
         </form>
       </section>
-      <div>
-      	<img src="img/map.jpg" alt="Карта" width="1200" height="475">
-      </div>
     </main>
-    <footer>
+    <footer class="footer-main">
       <div class="contacts">
-        <ul>
-          <li>
-            <a href="#">#visitsedona</a>
-          </li>
+        <ul class=footer-tel>
+          <li>#visitsedona</li>
           <li>тел: +7(495) 666-02-66</li>
         </ul>
       </div>
       <div class="social">
-        <ul>
-          <li>
+        <ul class="footer-social">
+          <li class="social-element">
             <a href="#">
-              <img src="img/t-icon.svg" width="45" height="45">
+              <img src="img/t-icon.svg" width="20" height="20">
             </a>
           </li>
-          <li>
+          <li class="social-element">
             <a href="#">
-              <img src="img/fb-icon.svg" width="45" height="45">
+              <img src="img/fb-icon.svg" width="20" height="20">
             </a>
           </li>
-          <li>
+          <li class="social-element">
             <a href="#">
-              <img src="img/youtube-icon.svg" width="45" height="45">
+              <img src="img/youtube-icon.svg" width="20" height="20">
             </a>
           </li>
         </ul>
