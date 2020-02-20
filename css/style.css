@@ -55,7 +55,8 @@ a {
 	background-image: url("../img/logo-little.svg")
 	width: 140px;
 	height: 75px;
-	
+	background-color: #ffffff;
+	background-repeat: no-repeat;
 	
 }
 
@@ -120,6 +121,7 @@ a {
 
 .sedona-img {
 	margin: 0;
+	vertical-align: bottom;
 }
 
 .sedona-blue {
@@ -131,7 +133,8 @@ a {
 .text-sedona {
 	color: #ffffff;
 	text-align: center;
-	
+	align-self: center;
+	padding-left: 90px;
 
 }
 
@@ -141,6 +144,13 @@ a {
 
 .text-first h3 {
 	font-size: 21px;
+}
+
+.text-sedona-second {
+	color: #ffffff;
+	text-align: center;
+	align-self: center;
+	padding-right: 90px;
 }
 
 .opportunities-list {
@@ -159,11 +169,14 @@ a {
 
 .opportunities-item:first-child::before {
 	content: "";
+	position: absolute;
 	display: block;
 	width: 80px;
 	height: 80px;
 	background-image: url("../img/icon-1.png"); 
 	background-repeat: no-repeat;
+	left: 20px;
+	
 }
 
 .opportunities-item:nth-child(2)::before {
@@ -174,23 +187,65 @@ a {
 	
 	width: 80px;
 	height: 80px;
-	background-image: url("../img/icon-2.png"); 
+	background-image: url("../img/icon-3.png"); 
 	background-repeat: no-repeat;
 	
 }
 
-.opportunities-item:last-child::before {
+.opportunities-item:nth-child(3)::before {
 	content: "";
 	display: block;
 	width: 80px;
 	height: 80px;
-	background-image: url("../img/icon-3.png"); 
+	background-image: url("../img/icon-2.png"); 
 	background-repeat: no-repeat;
-	
-;
 
 	
 }
+
+.opportunities-list-second {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0;
+}
+
+.opportunities-item-second:first-child::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-4.png"); 
+	background-repeat: no-repeat;
+
+	
+}
+
+.opportunities-item-second:nth-child(2)::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-5.png"); 
+	background-repeat: no-repeat;
+
+	
+}
+
+.opportunities-item-second:last-child::before {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 80px;
+	background-image: url("../img/icon-6.png"); 
+	background-repeat: no-repeat;
+
+	
+}
+
+
+
 
 .sedona-interesting {
 	text-align: center;
@@ -210,11 +265,8 @@ a {
 	background-color: #ffffff;
 	width: 570px;
 	margin: 0 auto;
-	background-color: #ffffff;
-	background-image: url("../img/"map.jpg);
+	background: url("../img/"map.jpg) no-repeat #ffffff;
 	background-repeat: no-repeat;
-	
-
 	
 }
 
@@ -328,5 +380,5 @@ a {
 
 .social-element:focus {
 	background-color: #5496bd;
-
+	fill: #88b6d1;
 }
