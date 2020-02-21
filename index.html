@@ -9,6 +9,9 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="logo-little" href="#" class="logo-little">
+        <img src="img/logo-little.svg" width="140px" height="75">
+      </a>
       <ul class="site-navigation">
         <li class="navigation-item">
           <a href="info.html">Информация</a>
@@ -23,13 +26,12 @@
           <a href="hotels.html">Гостиницы</a>
         </li>
       </ul>
-      
     </header>
     <main class="container">
       <section class="main-logo">
         <div class="logo-group">
-          <img src="img/logo-main.png" alt="Логотип Седона" width="460" height="350">
-          <img class="logo-part" src="img/polygon.svg" alt="Неровный край" width="1200" height="60px">
+          <img class="logo-part-main" src="img/logo-main.png" alt="Логотип Седона" width="460" height="350">
+          <img class="logo-part" src="img/polygon.svg" alt="Неровный край" width="1200" height="70px">
         </div>
         <div class="logo-info">
           <p class="info-width">Седона - небольшой городок в Аризоне,<br>
@@ -53,17 +55,17 @@
         <div class="sedona-opportunities grey">
           <h3 class="visually-hidden">Возможности в Седоне</h3>
           <ul class="opportunities-list">
-            <li class="opportunities-item">
+            <li class="opportunities-item-first">
               <h3>Жилье</h3>
               <p>Рекомендуем пожить в настоящем<br>
                  мотеле, все как в кино!</p>
             </li>
-            <li class="opportunities-item">
+            <li class="opportunities-item-second">
               <h3>Еда</h3>
               <p>Всегда заказывайте фирменный бургер,<br> 
                  вы не разочаруетесь!</p>
             </li>
-            <li class="opportunities-item">
+            <li class="opportunities-item-third">
               <h3>Сувениры</h3> 
               <p>Не только китайского, но и местного<br>
                  производства!</p>
@@ -83,19 +85,19 @@
         </div>
         <div class="sedona-opportunities grey">
           <ul class="opportunities-list-second">
-            <li class="opportunities-item-second">
+            <li class="opportunities-first">
               <h3>Небольшая площадь</h3>
               <p>№3</p>
               <p>Все достопримечательности<br>
                  находятся очень близко</p>
             </li>
-            <li class="opportunities-item-second">
+            <li class="opportunities-second">
               <h3>Красивая дорога</h3>
               <p>№4</p>
               <p>Ехать в Седону из Лас-Вегаса совсем<br>
                  не скучно!</p>
             </li>
-            <li class="opportunities-item-second">
+            <li class="opportunities-third">
               <h3>Мало туристов</h3>
               <p>№5</p>
               <p>Большинство едет в Гранд Каньон<br>
@@ -116,18 +118,18 @@
             <label for="form-visit-date">Дата заезда:</label>
             <input class="form-text" type="text" name="visit-date" value="24 апреля 2017" id="form-visit-date">
           </p>
-          <p>
+          <p class="form-departure">
             <label for="form-departure-date">Дата выезда:</label>
             <input class="form-text" type="text" name="departure-date" value="4 июля 2017" id="form-departure-date">
           </p>
           <div class="form-flex">
-            <p>
+            <p >
               <label for="form-value-adult">Взрослые:</label>
-              <input class="form-text" type="text" name="value-adult" value="2" id="form-value-adult">
+              <input class="form-text-adult" type="text" name="value-adult" value="2" id="form-value-adult">
             </p>
             <p>
               <label for="form-value-adult">Дети:</label>
-              <input class="form-text" type="text" name="value-child" value="0" id="form-value-child">
+              <input class="form-text-child" type="text" name="value-child" value="0" id="form-value-child">
             </p>
           </div>
           <button class="find-button" type="submit">Найти</button>
@@ -135,36 +137,38 @@
       </section>
     </main>
     <footer class="footer-main">
-      <div class="contacts">
-        <ul class=footer-tel>
-          <li>#visitsedona</li>
-          <li>тел: +7(495) 666-02-66</li>
-        </ul>
-      </div>
-      <div class="social">
-        <ul class="footer-social">
-          <li class="social-element">
-            <a href="#">
-              <img src="img/t-icon.svg" width="20" height="20">
-            </a>
-          </li>
-          <li class="social-element">
-            <a href="#">
-              <img src="img/fb-icon.svg" width="20" height="20">
-            </a>
-          </li>
-          <li class="social-element">
-            <a href="#">
-              <img src="img/youtube-icon.svg" width="20" height="20">
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="site">
-        <p>Website by</p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html.svg" alt="Логотип HTML Академии" width="115" height="45">
-        </a>
+      <div class="footer-contain">
+        <div class="contacts">
+          <ul class=footer-tel>
+            <li>#visitsedona</li>
+            <li>тел: +7(495) 666-02-66</li>
+          </ul>
+        </div>
+        <div class="social">
+          <ul class="footer-social">
+            <li class="social-element">
+              <a href="#">
+                <img src="img/t-icon.svg" width="20" height="20">
+              </a>
+            </li>
+            <li class="social-element">
+              <a href="#">
+                <img src="img/fb-icon.svg" width="20" height="20">
+              </a>
+            </li>
+            <li class="social-element">
+              <a href="#">
+                <img src="img/youtube-icon.svg" width="20" height="20">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="site">
+          <p>Website by</p>
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-html.svg" alt="Логотип HTML Академии" width="115" height="45">
+          </a>
+        </div>
       </div>
     </footer>
   </body>
