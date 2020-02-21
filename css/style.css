@@ -297,9 +297,13 @@ a {
 	background-color: #ffffff;
 	width: 570px;
 	margin: 0 auto;
+	
+	
+}
+
+.search-section-map {
 	background: url("../img/"map.jpg) no-repeat #ffffff;
 	background-repeat: no-repeat;
-	
 }
 
 
