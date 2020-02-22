@@ -481,3 +481,96 @@ a {
 	fill: #88b6d1;
 	opacity: 0.3;
 }
+
+.form-info {
+
+	color: #ffffff;
+}
+
+.form-all {
+	display: flex;
+	align-items: center;
+	background-image: url("../img/background-filter.jpg"); 
+	background-repeat: no-repeat;
+}
+
+.form-top {
+	display: flex;
+	
+}
+
+.form-top fieldset {
+	border: 0;
+}
+
+.form-infra {
+	width: 140px;
+}
+
+
+
+.infra {
+	list-style: none;
+	margin: 0;
+}
+
+.form-home {
+	list-style: none;
+}
+
+
+.results {
+	display: flex;
+	
+}
+
+.sort-results {
+	list-style: none;
+	display: flex;
+	
+}
+
+.results p {
+	color: #000000;
+}
+
+.results-find {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.price {
+	color: #b3d1e4;
+	padding-right: 35px;
+}
+
+.type {
+	padding-right: 35px;
+}
+
+.sort-results a {
+	color: #dadada;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-all {
+	display: flex;
+}
+
+
+.hotels {
+	list-style: none;
+	margin: 0;
+}
+
+.amara {
+	display: flex;
+}
+
+.desert {
+	display: flex;
+}
+
+.villas {
+	display: flex;
+}
