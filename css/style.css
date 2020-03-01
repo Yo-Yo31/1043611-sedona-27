@@ -102,7 +102,7 @@ img {
 	color: #81b3d2;
 }
 
-.navigation-link:focus {
+.navigation-link:active {
 	color: #b7b7b7;
 }
 
@@ -269,8 +269,6 @@ img {
 	padding-top: 60px;
 }
 
-
-
 .interesting p {
 	line-height: 24px;
 	margin: 0;
@@ -305,7 +303,7 @@ img {
 	background-color: #604e43;
 }
 
-.button-top:focus {
+.button-top:active {
 	background-color: #503e33;
 	color: #857871;
 	outline: none;
@@ -324,6 +322,16 @@ img {
 .form-visit label {
 	display: block;
 	min-width: 100px;
+}
+
+.form-visit input:hover,
+.form-departure input:hover {
+	background-color: #ebebeb;
+}
+
+.form-visit input:focus,
+.form-departure input:focus {
+	background-color: #ffffff;
 }
 
 .form-row.form-departure {
@@ -412,18 +420,20 @@ img {
 	background-color: #669ec0;
 }
 
-.find-button:focus {
+.find-button:active {
 	background-color: #5496bd;
 	color: #7aadcb;
 	outline: none;
 }
 
 .footer-main {
-	width: 980px;
-	margin: 0 auto;
+	background-color: #ffffff;
+
 }
 
 .footer-contain {
+	width: 980px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	padding-top: 35px;
@@ -453,15 +463,19 @@ img {
 	margin-right: 7px;
 	width: 45px;
 	height: 45px;
-	justify-content: center;
 	align-items: center;
+	justify-content: center;
+}
+
+.social-element img {
+	height: 20px;
 }
 
 .social-element:hover {
 	background-color: #669ec0;
 }
 
-.social-element:focus {
+.social-element:active {
 	background-color: #5496bd;
 	border: 0;
 	color: #88b6d1;
@@ -600,7 +614,6 @@ img {
 
 .all-results {
 	background-color: #ffffff;
-	border-bottom: 2px solid #e5e5e5;
 }
 
 .results {
@@ -665,7 +678,7 @@ img {
 	color: #81b3d2;
 }
 
-.sort-link:focus {
+.sort-link:active {
 	color: #000000;
 	border: none;
 }
@@ -678,21 +691,23 @@ img {
 	background-color: #ffffff;
 }
 
-.hotels {
-	width: 1060px;
-	margin: 0 auto;
-}
-
 .hotel-list {
 	list-style: none;
 	padding-left: 0;
 	margin: 0;
+	border-top: 2px solid #e5e5e5;
 }
 
 .hotel-item {
-	display: flex;
 	padding-top: 31px;
 	padding-bottom: 31px;
+	border-bottom: 2px solid #e5e5e5;
+}
+
+.hotel-width {
+	width: 1060px;
+	margin: 0 auto;
+	display: flex;
 }
 
 .hotel-value {
@@ -713,7 +728,7 @@ img {
 	color: #81b3d2;
 }
 
-.hotel-name:focus {
+.hotel-name:active {
 	color: #b2b2b2;
 }
 
@@ -753,7 +768,7 @@ img {
 	background-color: #669ec0;
 }
 
-.hotel-link:focus {
+.hotel-link:active {
 	background-color: #5496bd;
 	outline: none;
 	color: #88b6d1;
@@ -775,7 +790,7 @@ img {
 	background-color: #604e43;
 }
 
-.hotel-brown:focus {
+.hotel-brown:active {
 	background-color: #503e33;
 	outline: none;
 	color: #857871;
