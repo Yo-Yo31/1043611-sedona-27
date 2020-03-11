@@ -403,11 +403,6 @@ img {
 	background-color: #ebebeb;
 }
 
-.form-text:hover path,
-.form-departure input:hover path {
-	fill: #ffffff;
-}
-
 .form-text:focus,
 .form-departure .form-text:focus {
 	background-color: #ffffff;
@@ -482,17 +477,13 @@ img {
 	top: 15px;
 }
 
-.button-minus::before {
-	content: "";
-	display: block;
-	width: 15px;
-	height: 15px;
-	background-image: url("../img/minus.svg");
-	background-repeat: no-repeat;
-	z-index: 4;
+.img-first {
 	position: absolute;
-	left: -2px;
-	top: 4px;
+	right: 2px;
+}
+
+.img-first:hover path {
+	fill: #ffffff;
 }
 
 .form-text-adult {
@@ -519,19 +510,11 @@ img {
 	top: 15px;
 }
 
-.button-plus::after {
-	content: "";
-	display: block;
-	width: 15px;
-	height: 15px;
-	background-image: url("../img/plus.svg");
-	background-repeat: no-repeat;
-	z-index: 5;
+.img-second {
 	position: absolute;
-	bottom: -5px;
-	left: 2px;
+	bottom: -2px;
+	left: 3px;
 }
-
 
 .child {
 	display: flex;
@@ -666,7 +649,7 @@ img {
 }
 
 .site-img:active path {
-	fill: #bdbbbcc;
+	fill: #bdbbbc;
 }
 
 .choose {
