@@ -378,6 +378,19 @@ img {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
+	position: relative;
+}
+
+.visit-calendar::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/calendar.png");
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 23px;
+	right: 10px;
+	top: 8px;
 }
 
 .form-visit-date {
@@ -390,6 +403,11 @@ img {
 	background-color: #ebebeb;
 }
 
+.form-text:hover path,
+.form-departure input:hover path {
+	fill: #ffffff;
+}
+
 .form-text:focus,
 .form-departure .form-text:focus {
 	background-color: #ffffff;
@@ -397,6 +415,19 @@ img {
 
 .form-row.form-departure {
 	margin-top: 30px;
+	position: relative;
+}
+
+.departure-calendar::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background-image: url("../img/calendar.png");
+	background-repeat: no-repeat;
+	width: 21px;
+	height: 23px;
+	right: 10px;
+	top: 8px;
 }
 
 .form-departure-date {
@@ -406,7 +437,7 @@ img {
 
 .form-text {
 	width: 350px;
-	padding: 10px;
+	padding: 7px 10px;
 	border: none;
 	background-color: #f2f2f2;
 	font-size: inherit;
@@ -436,6 +467,34 @@ img {
 	min-width: 110px;
 }
 
+.position {
+	position: relative;
+}
+
+.button-minus {
+	position: absolute;
+	z-index: 3;
+	border: none;
+	display: block;
+	width: 10px;
+	height: 10px;
+	left: 14px;
+	top: 15px;
+}
+
+.button-minus::before {
+	content: "";
+	display: block;
+	width: 15px;
+	height: 15px;
+	background-image: url("../img/minus.svg");
+	background-repeat: no-repeat;
+	z-index: 4;
+	position: absolute;
+	left: -2px;
+	top: 4px;
+}
+
 .form-text-adult {
 	width: 114px;
 	border: none;
@@ -444,30 +503,35 @@ img {
 	font-weight: inherit;
 	line-height: inherit;
 	text-align: center;
-	padding: 10px;
+	padding: 7px 10px;
 	box-sizing: border-box;
 	position: relative;
 }
 
-
-.form-text-adult::before {
-	content: "";
-	width: 12px;
-	height: 3px;
+.button-plus {
 	position: absolute;
-	background-image: url("../img/minus.svg");
-	background-repeat: no-repeat;
-	
+	border: none;
+	z-index: 3;
+	display: block;
+	width: 10px;
+	height: 10px;
+	right: 14px;
+	top: 15px;
 }
 
-.form-text-adult::after {
+.button-plus::after {
 	content: "";
-	width: 12px;
-	height: 12px;
-	position: absolute;
+	display: block;
+	width: 15px;
+	height: 15px;
 	background-image: url("../img/plus.svg");
 	background-repeat: no-repeat;
+	z-index: 5;
+	position: absolute;
+	bottom: -5px;
+	left: 2px;
 }
+
 
 .child {
 	display: flex;
@@ -487,7 +551,7 @@ img {
 	font-weight: inherit;
 	line-height: inherit;
 	text-align: center;
-	padding: 10px;
+	padding: 7px 10px;
 	box-sizing: border-box;
 }
 
@@ -574,18 +638,35 @@ img {
 }
 
 .site {
-	width: 200px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 	align-items: center;
 }
 
 .site-link {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 198px;
+}
+
+.site-text {
+	width: 75px;
+	color: #000000;
+	margin: 0;
+}
+
+.site-img {
 	width: 115px;
-	height: 45px;
-	fill: #ffffff;
+	height: 40px;
+}
+
+.site-img:hover path {
+	fill: #81b3d2;
+}
+
+.site-img:active path {
+	fill: #bdbbbcc;
 }
 
 .choose {
