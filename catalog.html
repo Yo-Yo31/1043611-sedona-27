@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<header class="main-header">
-			<a class="logo-little" href="#" class="logo-little">
+			<a class="logo-little" href="index.html" class="logo-little">
         		<img src="img/logo-little.svg" width="140px" height="75">
       		</a>
       		<div class="navigation-wrapper">
@@ -69,16 +69,19 @@
 						</fieldset>
 					</form>
 					<div class="cost">
-						<h3 class="cost-name">Стоимость в сутки (р):</h3>
+						<div class="cost-name">Стоимость в сутки (р):</div>
 						<div class="cost-flex">
-							<p class="cost-text">От 0</p>
-	    					<p class="cost-text">До 3000</p>
+							<label class="min-cost">от<input type="number" name="min-price" value="0"></label>
+							<label class="max-cost">до<input type="number" name="max-price" value="3000"></label>
     					</div>
-    					<div class="cost-input">
-	    					<input class="cost-range" type="range" min="0" max="3000" step="100" name="range" value="2600" id="cost-value">
-	    					<label class="visually-hidden" for="cost-value">Бегунок</label>
+    					<div class="range-controls">
+	    					<div class="scale">
+	    						<div class="bar"></div>
+	    					</div>
+	    					<div class="range-toggle range-toggle-min"></div>
+        					<div class="range-toggle range-toggle-max"></div>
     					</div>
-    					<button class="cost-button" type="button">Показать</button>
+    					<button class="cost-button" type="submit">Показать</button>
 					</div>
 				</div>
 			</section>
@@ -99,8 +102,24 @@
 						</ul>
 					</div>
 					<div class="results-img">
-			            <img src="img/icon-up.svg" alt="Стрелочка" width="20" height="20">
-			            <img src="img/icon-down.svg" alt="Стрелочка" width="20" height="20">
+						<button type="button" class="img-one">
+				            <?xml version="1.0" encoding="utf-8"?>
+							<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 					width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+								<polyline fill="#cacaca" points="5.5,10 0,0 11,0 "/>
+							</svg>
+						</button>
+						<button class="img-two">
+				            <?xml version="1.0" encoding="utf-8"?>
+							<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+							<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 					width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+								<polygon fill="#81b3d2" points="5.5,0 0,10 11,10 "/>
+							</svg>
+						</button>
 			        </div>
 		    	</div>
 			</section>
@@ -197,8 +216,6 @@
 			                <a class="social-element" href="#">
 			                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 								width="17px" height="15px" viewBox="0 0 17 15" enable-background="new 0 0 17 15" xml:space="preserve">
-									<image overflow="visible" width="17" height="15" xlink:href="t.png"></image>
-									<g id="W6EeEF_1_">
 										<g>
 											<path fill="#FFFFFF" d="M10.95,0.144c1.685-0.496,2.984,0.27,3.577,1.179c0.673-0.231,1.331-0.481,2.011-0.708
 											c-0.004,0.861-0.522,1.513-0.857,1.768c0.685,0.17,1.304-0.491,1.304-0.491c-0.169,1-1.006,1.788-1.563,2.024
@@ -223,7 +240,6 @@
 			              	<a class="social-element" href="#">
 			                	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 							width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">
-									<image overflow="visible" enable-background="new" width="20" height="16" xlink:href="youtube.png"></image>
 									<path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
 	 								M6.027,11.998V4.002L15.014,8L6.027,11.998z"/>
 								</svg>
